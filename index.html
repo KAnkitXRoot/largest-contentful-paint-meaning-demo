@@ -6,7 +6,45 @@
 this demo shows how the scoring works currently">
 
 <title>Largest Contentful Paint (LCP) score 100 demo</title>
+<style>
+@media (max-width: 50vw) {
+  img {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+#header {
+    background: #9cce49;
+    padding: 25px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+</style>
 <h1>Largest Contentful Paint (LCP) score 100 demo</h1>
+
+<p id="header">
+This page has a lighthouse score of 100,100,100,100.<br />
+Even though it has over 500 images.<br />
+Follow the code guide to find out how.<br />
+
+The largest contentful paint element, <em>is this block of text</em>. Why? Beacause it's
+the <a href="https://web.dev/lcp/#examples">largest counted element</a> on the page.
+It does not matter how *many* elements there are- though you still need to do the
+right thing for every other score.
+<br />
+This is to demonstate that (almost) regarless of the number of image how to
+achieve a good (calculated) experience* and lighthouse score.
+<br />
+
+*Don't get obsessed with the scored. Focus on the *meaningful* message. For example,
+if this is your website, which is the most important message and interaction which
+should be possible first? Focus on that.
+<br />
+
+The <a href="https://web.dev/lcp/" title="Largest Contentful Paint (LCP)">Web vitals blog</a> defines LCP as:<br />
+<q>Largest Contentful Paint (LCP) is an important, user-centric metric for measuring perceived load speed because it marks the point in the page load timeline when the page's main content has likely loaded—a fast LCP helps reassure the user that the page is useful.</q>
+</p>
 
 <img src="https://via.placeholder.com/500x300" srcset="https://via.placeholder.com/250x150 250w, https://via.placeholder.com/500x300 500w" sizes="50vw" alt="grey box 500 by 300" width="250" height="150" />
 
